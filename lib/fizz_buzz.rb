@@ -9,3 +9,11 @@ def fizz_buzz(number)
     number
   end
 end
+
+def fizz_list(number)
+  holder = []
+  (1..number).each do |i|
+    holder << fizz_buzz(i)
+  end
+  holder
+end
